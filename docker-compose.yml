@@ -1,0 +1,16 @@
+version: '2.0'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    command: make 2021
+    networks:
+      - nginx-load-balancer
+networks:
+  nginx-load-balancer:
+    external:
+      name: docker_nginx-load-balancer

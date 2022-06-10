@@ -53,3 +53,11 @@
 	vendor/bin/jekyll serve --source 2020 --destination 2020/_site --baseurl ''
 2020-sass:
 	vendor/bin/sass --watch 2020/assets/sass:2020/assets/css
+
+.PHONY: 2021 2021-jekyll 2021-sass
+2021:
+	make -j 2 2021-jekyll 2021-sass
+2021-jekyll:
+	vendor/bin/jekyll serve --source 2021 --destination 2021/_site --baseurl ''
+2021-sass:
+	vendor/bin/sass --watch 2021/assets/sass:2021/assets/css

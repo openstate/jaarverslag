@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+    <title>{{ page.title | default: site.title | escape }}</title>
+
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css" data-noprefix>
+
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:site_name" content="Open State Foundation">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:image" content="https://openstate.eu/wp-content/themes/open-state-theme/dist/images/logo-open-state-foundation-og.png">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:url" content="{{ site.production_url }}">
+
+	<!-- Matomo -->
+	<script>
+	    var _paq = window._paq = window._paq || [];
+	    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	    _paq.push(['trackPageView']);
+	    _paq.push(['enableLinkTracking']);
+	    (function() {
+	        var u="https://analytics.openstate.eu/";
+	        _paq.push(['setTrackerUrl', u+'matomo.php']);
+	        _paq.push(['setSiteId', '7']);
+	        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	    })();
+	</script>
+	<!-- End Matomo Code -->
+</head>
+<body>
+    <script>
+		document.body.className += ' js-enabled'; if ('IntersectionObserver' in window) { document.body.className += ' lazyload'; }
+	</script>
+    {{ content }}
+</body>
+</html>
