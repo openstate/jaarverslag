@@ -37,7 +37,8 @@ Once active development is finished stop the container and change the
 `nginx-load-balancer` config to the right `location /` part so it serves the
 HTML and files directly.
 
-If you need to make a change, simply start and stop the container.
+If you need to make a change, simply start the container, make and save the
+change (the container will compile it) and stop the container.
 
 Edit the stylesheets in `assets/sass` (not `assets/css` as this is the generated
 output) and edit `index.html` (not `_site/index.html` which is also generated).
