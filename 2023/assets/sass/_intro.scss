@@ -1,0 +1,30 @@
+.header {
+    background: transparent url(../img/bloom.png) 50% 50% no-repeat;
+    background-image: url(../img/bloom.svg), none;
+    background-size: 45%;
+
+    text-shadow: 0 0 1em #fff, 0 0 1em #fff;
+
+    @include media-breakpoint-up(lg) {
+        background-size: 33%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        background-size: 3.5em;
+    }
+}
+
+.intro-mark-photo {
+    width: 4em;
+
+    @include media-breakpoint-up(sm) {
+        width: 7em;
+    }
+}
+
+.board-members {
+    img {
+        width: 3.8em;
+        height: 3.8em;
+    }
+}

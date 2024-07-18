@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ibm_plex_sans_condensed_regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ibm_plex_sans_condensed_bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+
+$mysoc-font-stack: 'IBM Plex Sans Condensed', Helvetica, Arial, sans-serif;
+
+$color-mysoc-blue: #0992A7;
+$color-mysoc-green: #93D0D2;
+$color-mysoc-yellow: #FFE94D;
+$color-mysoc-yellow-light: lighten(#FFE94D, 1%);
+$color-mysoc-orange: #8FD9E8;
+$color-mysoc-red: #035C6E;
+$color-mysoc-violet: #732475;
+$color-mysoc-brighter-violet: #609ABE;
+$color-mysoc-purple: #A62689;
+$color-mysoc-off-white: #F0F3F5;
+$color-mysoc-light-grey: #A8C4D9;
+$color-mysoc-dark-grey: #5B4864;
+$color-mysoc-black: #2E1E3D;
+$color-mysoc-black-dark: #251631;
+
+$color-mastodon-purple: #5c4fe5;
+$color-facebook-blue: #3b5998;
+$color-twitter-blue: darken(#1da1f2, 14%);
+$color-linkedin-blue: #0077b5;
+
+$mysoc-footer-background-color: $color-mysoc-black;
+$mysoc-footer-text-color: #acacac;
+$mysoc-footer-link-text-color: #fff;
+$mysoc-footer-link-hover-text-color: #fff;
+$mysoc-footer-divider-color: #4b4b4b;
+$mysoc-footer-legal-text-color: #9a9a9a;
+
+
+// Bootstrap overrides from here on, in roughly the same order
+// they appear in bootstrap/scss/_variables.scss
+
+$black: $color-mysoc-black;
+$white: #fff;
+
+$primary: $color-mysoc-blue;
+
+$theme-colors: (
+    'mysoc-blue': $color-mysoc-blue,
+    'mysoc-green': $color-mysoc-green,
+    'mysoc-yellow': $color-mysoc-yellow,
+    'mysoc-yellow-light': $color-mysoc-yellow-light,
+    'mysoc-orange': $color-mysoc-orange,
+    'mysoc-red': $color-mysoc-red,
+    'mysoc-violet': $color-mysoc-violet,
+    'mysoc-brighter-violet': $color-mysoc-brighter-violet,
+    'mysoc-purple': $color-mysoc-purple,
+    'mysoc-off-white': $color-mysoc-off-white,
+    'mysoc-light-grey': $color-mysoc-light-grey,
+    'mysoc-dark-grey': $color-mysoc-dark-grey,
+    'mysoc-black': $color-mysoc-black,
+    'mysoc-black-dark': $color-mysoc-black-dark,
+    'white': $white,
+    'black': $black,
+);
+
+$spacer: 1rem; // have to define this, so we can use it in this file.
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4.5),
+    7: ($spacer * 6),
+    8: ($spacer * 7.5),
+    9: ($spacer * 9),
+    10: ($spacer * 12),
+);
+
+$body-color: $black;
+
+$link-color: $color-mysoc-purple;
+#team a {
+    color: darken($color-mysoc-purple, 11%);
+}
+#facts-and-figures a {
+    color: $color-mysoc-violet;
+}
+ul a,
+p a {
+    text-decoration: underline !important;
+}
+
+$font-family-base: $mysoc-font-stack;
+
+// We want nice big text on large screens, and smaller text on small screens.
+// So we set the base font size to something big (and the headings to something
+// frankly huge) and then use Bootstrap's Responsive Font Size system to scale
+// those font sizes down to something more normal on the narrowest screens.
+$enable-responsive-font-sizes: true;
+$font-size-base: 1.5rem; // about 24px
+$h1-font-size: 5rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2.5rem;
+$h4-font-size: 2rem; // about 32px
+$rfs-base-font-size: 1rem; // about 16px, down from default 1.25rem/20px
+
+$headings-font-weight: bold;
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+$headings-line-height: 1.1; // down from 1.2
+
+$btn-padding-x: 1rem;
+$btn-padding-x-sm: 0.75rem;
+$btn-padding-x-lg: 1.5rem;
+
+$card-border-width: 0;

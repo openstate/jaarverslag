@@ -1,0 +1,52 @@
+.tictec-logo {
+    display: block;
+    position: relative;
+    top: -1.2em;
+    margin: 0 auto -1em auto;
+    width: 2.4em;
+    padding-top: 3em;
+    overflow: hidden;
+    height: 0;
+    background: transparent url(../img/tictec-logo.png) 0 0 no-repeat;
+    background-image: url(../img/tictec-logo.svg), none;
+    background-size: contain;
+}
+
+.red-strikethrough {
+    text-decoration-thickness: 0.15em;
+    text-decoration-color: $color-mysoc-red;
+}
+
+.tictec-event-header {
+    border-radius: $border-radius;
+    padding: 7rem 1.5rem 1.5rem 1.5rem;
+    color: #fff;
+
+    @include media-breakpoint-up('md') {
+        padding: 8rem 2rem 2rem 2rem;
+    }
+
+    .lead {
+        margin-bottom: -0.5rem;
+    }
+}
+
+.tictec-event-header--2020 {
+    background: #00444E url(../img/northern-lights.jpg) 50% 55% no-repeat;
+    background-size: cover;
+    text-shadow: 0 0rem 2rem rgba(#000, 0.2);
+
+    .webp & {
+        background-image: url(../img/northern-lights.webp);
+    }
+}
+
+.tictec-event-header--autumn {
+    background: #242119 url(../img/hong-kong-street.jpg) 50% 80% no-repeat;
+    background-size: cover;
+    text-shadow: 0 0rem 2rem rgba(#000, 0.5);
+
+    .webp & {
+        background-image: url(../img/hong-kong-street.webp);
+    }
+}

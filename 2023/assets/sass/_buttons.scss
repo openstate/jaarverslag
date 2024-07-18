@@ -1,0 +1,50 @@
+.btn-facebook,
+.btn-twitter,
+.btn-donate {
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-color: transparent;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 1em;
+        margin-right: 0.4em;
+        vertical-align: -0.15em;
+    }
+}
+
+.btn-mastodon {
+    @include button-variant($color-mastodon-purple, $color-mastodon-purple);
+    text-decoration: none !important;
+}
+
+.btn-facebook {
+    @include button-variant($color-facebook-blue, $color-facebook-blue);
+    text-decoration: none !important;
+
+    &:before {
+        background-image: url(../img/facebook.svg);
+    }
+}
+
+.btn-twitter {
+    @include button-variant($color-twitter-blue, $color-twitter-blue);
+    text-decoration: none !important;
+
+    &:before {
+        background-image: url(../img/twitter.svg);
+    }
+}
+
+.btn-linkedin {
+    @include button-variant($color-linkedin-blue, $color-linkedin-blue);
+    text-decoration: none !important;
+}
+
+.btn-donate {
+    &:before {
+        background-image: url(../img/love.svg);
+    }
+}

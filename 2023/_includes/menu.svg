@@ -1,0 +1,1 @@
+<svg role="presentation" width="{{ include.width | default: '16' }}" height="{{ include.height | default: '16' }}" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="{{ include.classes }}"><g fill="currentColor" fill-rule="nonzero"><rect width="16" height="2" y="2" rx="1"/><rect width="16" height="2" y="12" rx="1"/><rect width="16" height="2" y="7" rx="1"/></g></svg>

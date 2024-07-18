@@ -1,0 +1,9 @@
+name: osfjaarverslag2023
+baseurl:
+host: 0.0.0.0
+gems: ['jekyll/minibundle']
+title: >
+  Open State Foundation jaarverslag 2023
+description: >
+  open data, transparante samenleving
+production_url: https://2023.openstate.eu

@@ -3,6 +3,16 @@
 There’s a separate directory for each year. They all use the Sass command line
 tool to compile the CSS, and then Jekyll to generate the static site.
 
+###
+For a new year:
+- Edit docker-compose.yml and change the `make` command year
+- Edit Makefile and include a section for the new year at the bottom
+- Copy the directory of the previous year for the new year
+- Enter the new directory
+- Edit `_config.yml`
+- Edit the Matomo code in `_layouts/default.html`
+- Edit `index.html`
+
 ## To run locally
 This repo includes submodules, so you’ll either want to start with a recursive
 clone:
