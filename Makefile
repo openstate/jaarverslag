@@ -77,3 +77,11 @@
 	vendor/bin/jekyll serve --source 2023 --destination 2023/_site --baseurl ''
 2023-sass:
 	vendor/bin/sass --watch 2023/assets/sass:2023/assets/css
+
+.PHONY: 2024 2024-jekyll 2024-sass
+2024:
+	make -j 2 2024-jekyll 2024-sass
+2024-jekyll:
+	vendor/bin/jekyll serve --source 2024 --destination 2024/_site --baseurl ''
+2024-sass:
+	vendor/bin/sass --watch 2024/assets/sass:2024/assets/css

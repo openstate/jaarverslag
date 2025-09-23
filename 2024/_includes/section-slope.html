@@ -1,0 +1,6 @@
+<svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 1 1" preserveAspectRatio="none" class="section-slope">
+  <g fill="none" fill-rule="nonzero">
+    <rect width="100%" height="100%" fill-rule="nonzero" class="fill-{{ include.bottomright | default: include.bottomleft }}"></rect>
+    <polygon points="0 0 1 0 {% if include.topleft %}0 1{% else %}1 1{% endif %}" fill-rule="nonzero" class="fill-{{ include.topleft | default: include.topright }}"></polygon>
+  </g>
+</svg>

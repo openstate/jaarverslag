@@ -1,0 +1,11 @@
+<div class="tweet {{ include.class }}">
+    <div class="tweet__header">
+        <a href="https://twitter.com/{{ include.username }}">
+            {% include image.html src=include.image width="36" height="36" alt="" loading="lazy" %}
+        </a>
+        <a href="https://twitter.com/{{ include.username }}">
+            <strong {% if include.verified %}class="verified"{% endif %}>{{ include.displayname }}</strong>
+            <small>@{{ include.username }}</small>
+        </a>
+        <a href="https://twitter.com/{{ include.username }}/status/{{ include.id }}" class="icon" title="View on Twitter"></a>
+    </div>

@@ -1,0 +1,30 @@
+.youtube-embed {
+    overflow: hidden;
+    background-color: #000;
+
+    .play-button-background {
+        @include transition( fill .1s cubic-bezier(0.4,0.0,1,1), fill-opacity .1s cubic-bezier(0.4,0.0,1,1) );
+        fill: #212121;
+        fill-opacity: 0.8;
+    }
+
+    & > a {
+        display: block;
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            max-width: 12%;
+        }
+
+        &:hover .play-button-background {
+            fill: $color-mysoc-blue;
+            fill-opacity: 1;
+        }
+    }
+}

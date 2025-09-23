@@ -1,0 +1,50 @@
+.splash {
+    display: block;
+    padding: map-get($spacers, 3);
+    border-radius: $border-radius;
+    color: inherit;
+    padding-top: 54%;
+    background: #fff url(../img/twfy-crowdfunder-small.jpg) 50% 0 no-repeat;
+    background-size: 100%;
+    @include media-breakpoint-up('sm') {
+        padding: map-get($spacers, 4);
+        background-size: cover;
+        background: #fff url(../img/twfy-crowdfunder.jpg) 50% 50% no-repeat;
+    }
+
+    @include media-breakpoint-up('lg') {
+        padding: map-get($spacers, 5);
+    }
+
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.splash--twfy {
+    background-image: url(../img/twfy-crowdfunder-small.jpg);
+    @include media-breakpoint-up('sm') {
+        background-image: url(../img/twfy-crowdfunder.jpg);
+    }
+}
+
+.splash--tfl {
+    background-image: url(../img/tfl-splash-small.jpg);
+    @include media-breakpoint-up('sm') {
+        background-image: url(../img/tfl-splash.jpg);
+        color: #fff;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #fff;
+        }
+    }
+}
+
+.dark-overlay {
+    @include media-breakpoint-up('sm') {
+        background-color: rgba(0,0,0,0.7);
+        padding: 18px;
+    }
+}

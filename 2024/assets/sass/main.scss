@@ -1,0 +1,92 @@
+@import "settings";
+
+@import "../../_bootstrap/scss/functions";
+@import "../../_bootstrap/scss/variables";
+@import "../../_bootstrap/scss/mixins";
+@import "../../_bootstrap/scss/root";
+@import "../../_bootstrap/scss/reboot";
+@import "../../_bootstrap/scss/type";
+@import "../../_bootstrap/scss/images";
+@import "../../_bootstrap/scss/code";
+@import "../../_bootstrap/scss/grid";
+// @import "../../_bootstrap/scss/tables";
+// @import "../../_bootstrap/scss/forms";
+@import "../../_bootstrap/scss/buttons";
+// @import "../../_bootstrap/scss/transitions";
+// @import "../../_bootstrap/scss/dropdown";
+// @import "../../_bootstrap/scss/button-group";
+// @import "../../_bootstrap/scss/input-group";
+// @import "../../_bootstrap/scss/custom-forms";
+// @import "../../_bootstrap/scss/nav";
+// @import "../../_bootstrap/scss/navbar";
+@import "../../_bootstrap/scss/card";
+// @import "../../_bootstrap/scss/breadcrumb";
+// @import "../../_bootstrap/scss/pagination";
+// @import "../../_bootstrap/scss/badge";
+// @import "../../_bootstrap/scss/jumbotron";
+// @import "../../_bootstrap/scss/alert";
+// @import "../../_bootstrap/scss/progress";
+// @import "../../_bootstrap/scss/media";
+// @import "../../_bootstrap/scss/list-group";
+// @import "../../_bootstrap/scss/close";
+// @import "../../_bootstrap/scss/toasts";
+// @import "../../_bootstrap/scss/modal";
+// @import "../../_bootstrap/scss/tooltip";
+// @import "../../_bootstrap/scss/popover";
+// @import "../../_bootstrap/scss/carousel";
+// @import "../../_bootstrap/scss/spinners";
+@import "../../_bootstrap/scss/utilities";
+@import "../../_bootstrap/scss/print";
+
+@import "links";
+@import "buttons";
+@import "underlines";
+@import "fills";
+@import "grid";
+@import "menu";
+@import "stats";
+@import "chat";
+@import "tweet";
+@import "images";
+@import "youtube-embed";
+@import "name-grid";
+@import "splash";
+@import "tictec";
+@import "intro";
+@import "funding";
+@import "mysoc-standard-footer";
+
+body.lazyload .js-lazyload {
+    background: none !important;
+    &:before {
+        background: none !important;
+    }
+}
+
+.section-slope {
+    width: 100%;
+    height: 3em;
+    margin: -1px 0; // prevent ghost lines when rounding to less than a full pixel height
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    line-height: 1.35em;
+}
+
+h3, h4, h5,
+.h3, .h4, .h5 {
+    line-height: 1.2;
+}
+
+.fat-blockquote {
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1;
+    letter-spacing: -0.2px;
+    color: #fff;
+}
